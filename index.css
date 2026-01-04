@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    font-family: sans-serif;
+}
+
+.h1{
+    display: none;
+}
+
+/* Game board */
+.game-board {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    gap: 15px;
+}
+
+/* Tiles */
+.tile {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Colors */
+.red {
+    background-color: #d32f2f;
+}
+
+.yellow {
+    background-color: #fbc02d;
+}
+
+.green {
+    background-color: #388e3c;
+}
+
+.blue {
+    background-color: #1976d2;
+}
+
+/* Active / played state */
+.tile.active {
+    filter: brightness(1.5);
+    transform: scale(1.05);
+}
+
+button{
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
